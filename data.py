@@ -1,6 +1,5 @@
 import requests
 
-
 # -----------------------------------------------------------
 
 question_data = []
@@ -8,7 +7,7 @@ question_data = []
 
 def get_questions():
     parameters = {
-        "amount": 10,
+        "amount": 100,
         "type": "boolean"
     }
     response = requests.get(url="https://opentdb.com/api.php", params=parameters)
